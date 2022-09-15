@@ -71,10 +71,27 @@
     <button type="submit">Submit</button>
 </form>
 
-<p>form with username, pw without type</p>
+<p>form with only pw</p>
 <form>
-    <input name="username">
-    <input name="password">
+    <input type="password" name="password">
+
+    <button type="submit">Submit</button>
+</form>
+
+<p>form with username, pw, pw</p>
+<form>
+    <input type="text" name="username">
+    <input type="password" name="password">
+    <input type="password" name="password">
+
+    <button type="submit">Submit</button>
+</form>
+
+<p>form with username, pw, pwAC</p>
+<form>
+    <input type="text" name="username">
+    <input type="password" name="password">
+    <input type="password" name="password" autocomplete="password">
 
     <button type="submit">Submit</button>
 </form>
