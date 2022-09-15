@@ -54,7 +54,7 @@
 </form>
 
 <p>form with username, pw, username</p>
-<form id="formLogin-hiddenUsername-hiddenPw-username">
+<form>
     <input type="text" name="username">
     <input type="password" name="password">
     <input type="text" name="username">
@@ -63,10 +63,18 @@
 </form>
 
 <p>form with username, pw, usernameAC</p>
-<form id="formLogin-hiddenUsername-hiddenPw-username">
+<form>
     <input type="text" name="username">
     <input type="password" name="password">
     <input type="text" name="username" autocomplete="username">
+
+    <button type="submit">Submit</button>
+</form>
+
+<p>form with username, pw without type</p>
+<form>
+    <input name="username">
+    <input name="password">
 
     <button type="submit">Submit</button>
 </form>
