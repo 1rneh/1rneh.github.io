@@ -1,6 +1,24 @@
-<p>form with username type=text and no autocomplete attr</p>
-<form id="formLogin">
+<p>form with username, hidden pw</p>
+<form id="formLogin-hiddenUsername-hiddenPassword">
+    <input type="text" style="display:none" name="username">
+    <input type="password" name="password">
+
+    <button type="submit">Submit</button>
+</form>
+
+<p>form with usernameAC, username, pw</p>
+<form id="formLogin-hiddenUsername-hiddenPw-username">
+    <input type="text" name="username" autocomplete="username">
     <input type="text" name="username">
+    <input type="password" name="password">
+
+    <button type="submit">Submit</button>
+</form>
+
+<p>form with username, usernameAC, pw</p>
+<form id="formLogin-hiddenUsername-hiddenPw-username">
+    <input type="text" name="username">
+    <input type="text" name="username" autocomplete="username">
     <input type="password" name="password">
 
     <button type="submit">Submit</button>
