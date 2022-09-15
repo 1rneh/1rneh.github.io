@@ -1,21 +1,29 @@
-<p>form with hidden username, hidden pw</p>
-<form id="formLogin-hiddenUsername-hiddenPassword-style.display.none">
+<p>form with display:none</p>
+<form>
     <input type="text" style="display:none" name="username">
     <input type="password" style="display:none" name="password">
 
     <button type="submit">Submit</button>
 </form>
 
-
-<form id="formLogin-hiddenUsername-hiddenPassword-type=hidden">
+<p>form with type="hidden"</p>
+<form>
     <input type="hidden" name="username">
     <input type="hidden" name="password">
 
     <button type="submit">Submit</button>
 </form>
 
+<p>form with elements hidden</p>
+<form>
+    <input hidden type="text" name="username">
+    <input hidden type="password" name="password">
+
+    <button type="submit">Submit</button>
+</form>
+
 <p>form with usernameAC, username, pw</p>
-<form id="formLogin-hiddenUsername-hiddenPw-username">
+<form>
     <input type="text" name="username" autocomplete="username">
     <input type="text" name="username">
     <input type="password" name="password">
@@ -24,7 +32,7 @@
 </form>
 
 <p>form with username, usernameAC, pw</p>
-<form id="formLogin-hiddenUsername-hiddenPw-username">
+<form>
     <input type="text" name="username">
     <input type="text" name="username" autocomplete="username">
     <input type="password" name="password">
@@ -32,25 +40,33 @@
     <button type="submit">Submit</button>
 </form>
 
-<p>form with username, usernameAC, pw</p>
-<form id="formLogin-hiddenUsername-hiddenPw-username">
+<p>form with username, usernameAC, mutipleUsername, pw</p>
+<form>
     <input type="text" name="username">
     <input type="text" name="username" autocomplete="username">
     <input type="text" name="username">
     <input type="text" name="username">
     <input type="text" name="username">
     <input type="text" name="username">
-    
     <input type="password" name="password">
 
     <button type="submit">Submit</button>
 </form>
 
-<p>form with username, hidden usernameAC, pw</p>
+<p>form with username, pw, username</p>
 <form id="formLogin-hiddenUsername-hiddenPw-username">
     <input type="text" name="username">
-    <input type="text" name="username" style="display:none" autocomplete="username">
     <input type="password" name="password">
+    <input type="text" name="username">
+
+    <button type="submit">Submit</button>
+</form>
+
+<p>form with username, pw, usernameAC</p>
+<form id="formLogin-hiddenUsername-hiddenPw-username">
+    <input type="text" name="username">
+    <input type="password" name="password">
+    <input type="text" name="username" autocomplete="username">
 
     <button type="submit">Submit</button>
 </form>
